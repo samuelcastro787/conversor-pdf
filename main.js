@@ -20,12 +20,11 @@ function atualizarArquivo(file) {
   fileNameDiv.textContent = `Selecionado: ${file.name}`;
 }
 
-// Seleção via clique
 arquivoInput.addEventListener("change", () => {
   atualizarArquivo(arquivoInput.files[0]);
 });
 
-// Drag and drop
+
 ["dragenter", "dragover"].forEach(evento => {
   dropZone.addEventListener(evento, (e) => {
     e.preventDefault();
@@ -43,12 +42,12 @@ arquivoInput.addEventListener("change", () => {
 dropZone.addEventListener("drop", (e) => {
   const file = e.dataTransfer.files[0];
   if (file) {
-    arquivoInput.files = e.dataTransfer.files; // mantém o input sincronizado
+    arquivoInput.files = e.dataTransfer.files;
     atualizarArquivo(file);
   }
 });
 
-// Conversão
+
 btn.addEventListener("click", () => {
   if (!arquivoSelecionado) {
     fileNameDiv.textContent = "Selecione uma imagem antes de continuar.";
@@ -68,7 +67,7 @@ btn.addEventListener("click", () => {
   btn.textContent = "Gerando PDF...";
 
   img.onload = () => {
-    // Calcula o tamanho do PDF em polegadas a partir das dimensões reais da imagem (96 DPI)
+
     const larguraPolegadas = img.naturalWidth / 96;
     const alturaPolegadas = img.naturalHeight / 96;
 
