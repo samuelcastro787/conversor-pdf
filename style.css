@@ -1,4 +1,3 @@
-/* Configurações Globais */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,6 @@ body {
     padding: 20px;
 }
 
-/* Container Principal */
 .container {
     background: #ffffff;
     padding: 40px 30px;
@@ -38,7 +36,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Área de Upload Customizada */
 .upload-area {
     border: 2px dashed #cbd5e1;
     border-radius: 12px;
@@ -73,7 +70,6 @@ h1 {
     font-weight: 500;
 }
 
-/* Oculta o input padrão feio do navegador */
 #arquivo {
     position: absolute;
     width: 100%;
@@ -84,7 +80,6 @@ h1 {
     cursor: pointer;
 }
 
-/* Nome do arquivo selecionado */
 .file-name {
     margin-top: 12px;
     font-size: 0.85rem;
@@ -93,7 +88,6 @@ h1 {
     word-break: break-all;
 }
 
-/* Botão de Conversão */
 .btn-convert {
     width: 100%;
     background-color: #3b82f6;
@@ -115,7 +109,6 @@ h1 {
     transform: scale(0.98);
 }
 
-/* Responsividade (Mobile First / Ajustes menores) */
 @media (max-width: 480px) {
     .container {
         padding: 30px 20px;
