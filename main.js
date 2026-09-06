@@ -2,7 +2,6 @@ const btn = document.querySelector("#converter");
 const arquivoInput = document.querySelector("#arquivo");
 const fileNameDiv = document.querySelector("#file-name");
 
-// Atualiza a tela com o nome do arquivo quando selecionado
 arquivoInput.addEventListener("change", () => {
   if (arquivoInput.files[0]) {
     fileNameDiv.textContent = `Selecionado: ${arquivoInput.files[0].name}`;
