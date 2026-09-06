@@ -47,7 +47,8 @@ h1 {
     position: relative;
 }
 
-.upload-area:hover {
+.upload-area:hover,
+.upload-area.dragover {
     border-color: #3b82f6;
     background: #eff6ff;
 }
@@ -88,6 +89,10 @@ h1 {
     word-break: break-all;
 }
 
+.file-name.error {
+    color: #dc2626;
+}
+
 .btn-convert {
     width: 100%;
     background-color: #3b82f6;
@@ -107,6 +112,11 @@ h1 {
 
 .btn-convert:active {
     transform: scale(0.98);
+}
+
+.btn-convert:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
 }
 
 @media (max-width: 480px) {
